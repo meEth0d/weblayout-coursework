@@ -50,6 +50,17 @@ html {
   align-items: center;
 }
 
+.number-block {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+.main-number {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
 .logo-img {
   margin-right: 30px;
 }
@@ -67,12 +78,22 @@ padding-right: 65px;
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 743px;
 }
 .nav-item:not(:last-child) {
   margin-right: 45px;
+  margin-bottom: 10px;
 }
 
-.link-btn a:not(:last-child) {
+.link-btn {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 426px;
+}
+
+.link-descr:not(:last-child) {
+  margin-bottom: 10px;
   margin-right: 80px;
 }
 
@@ -83,7 +104,6 @@ padding-right: 65px;
 }
 .section-spec-gen {
   display: flex;
-  align-content: space-between;
   width: 100%;
 }
 
@@ -93,25 +113,69 @@ padding-right: 65px;
   margin-bottom: 20px;
 }
 
-
+.section-spec-left {
+  flex-direction: column;
+  margin-right: 23px;
+}
 
 .section-spec-item-one {
   background-image: url(/weblayout/06_layout-flexbox/img/maldivy.jpg);
-  background-size: contain;
+  background-size: auto 100%;
   background-repeat: no-repeat;
+  min-width: 573px;
+  min-height: 258px;
+  margin-bottom: 23px;
 }
 
 .section-spec-item-two {
   background-image: url(/weblayout/06_layout-flexbox/img/hot-tour.jpg);
   background-size: auto 100%;
   background-repeat: no-repeat;
-  display: inline-block;
+  min-width: 573px;
+  min-height: 259px;
 }
 
 .section-spec-item-three {
 background-image: url(/weblayout/06_layout-flexbox/img/lux.jpg);
 background-size: auto 100%;
 background-repeat: no-repeat;
+min-width: 573px;
+min-height: 540px;
+}
+
+.section-spec-heading {
+  padding-left: 40px;
+  padding-top: 40px;
+  margin: 0;
+  color: #ffff;
+  size: 40px;
+  line-height: 40px;
+}
+
+.section-spec-head {
+  padding-left: 40px;
+  padding-top: 211px;
+  margin: 0;
+  color: #ffff;
+  size: 60px;
+}
+
+.section-spec-descr {
+  padding-top: 15px;
+  padding-left: 40px;
+  margin: 0;
+  color: #ffff;
+  size: 20px;
+}
+
+.section-spec-more-block {
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 47px;
+}
+
+.section-spec-more {
+  color: #FFCC66;
 }
 
 /* About */
@@ -134,6 +198,8 @@ background-repeat: no-repeat;
   margin: 0;
 }
 
+/* Services */
+
 .serv-container {
   padding-top: 70px;
 }
@@ -143,23 +209,44 @@ background-repeat: no-repeat;
   padding-left: 40px;
   margin-bottom: 20px;
 }
-.section-about-list {
+.section-serv-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -23px;
 }
 
-.section-about-item {
-  flex: 1 0 50%;
+.section-serv-item {
+  width: 573px;
   outline: 3px solid red;
-}
-
-.section-about-item:not(:last-child) {
   margin-right: 23px;
+  margin-bottom: 23px;
+  padding-top: 160px;
 }
 
-.section-about-head {
+.serv-img-one{
+  background-image: url(/weblayout/06_layout-flexbox/img/exlusive.jpg);
+  background-repeat: no-repeat;
+}
+
+.serv-img-two{
+  background-image: url(/weblayout/06_layout-flexbox/img/arenda.jpg);
+  background-repeat: no-repeat;
+}
+
+.serv-img-three{
+  background-image: url(/weblayout/06_layout-flexbox/img/relax.jpg);
+  background-repeat: no-repeat;
+}
+
+.serv-img-four{
+  background-image: url(/weblayout/06_layout-flexbox/img/secured-parking.jpg);
+  background-repeat: no-repeat;
+}
+
+.section-serv-head {
   padding-left: 45px;
 }
-.section-about-descr {
+.section-serv-descr {
   padding-left: 45px;
 }
 
@@ -177,21 +264,67 @@ background-repeat: no-repeat;
 
 .section-edge-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -23px;
 }
 
 .section-edge-item {
-  background-image: url(/weblayout/06_layout-flexbox/img/bathtub.svg);
-  background-repeat: no-repeat;
-  flex: 1 1 25%;
-}
-
-.section-edge-item:not(:last-child) {
+  min-width: 275px;
+  outline: 3px solid red;
   margin-right: 23px;
   margin-bottom: 23px
 }
 
+.edge-img1 {
+  background-image: url(/weblayout/06_layout-flexbox/img/bathtub.svg);
+  background-repeat: no-repeat;
+}
+
+.edge-img2 {
+  background-image: url(/weblayout/06_layout-flexbox/img/hanger.svg);
+  background-repeat: no-repeat;
+}
+
+.edge-img3 {
+  background-image: url(/weblayout/06_layout-flexbox/img/heating.svg);
+  background-repeat: no-repeat;
+}
+
+.edge-img4 {
+  background-image: url(/weblayout/06_layout-flexbox/img/hotel-key.svg);
+  background-repeat: no-repeat;
+}
+
+.edge-img5 {
+  background-image: url(/weblayout/06_layout-flexbox/img/parking.svg);
+  background-repeat: no-repeat;
+}
+
+.edge-img6 {
+  background-image: url(/weblayout/06_layout-flexbox/img/reception.svg);
+  background-repeat: no-repeat;
+}
+
+.edge-img7 {
+  background-image: url(/weblayout/06_layout-flexbox/img/security-box.svg);
+  background-repeat: no-repeat;
+}
+
+.edge-img8 {
+  background-image: url(/weblayout/06_layout-flexbox/img/swimming-pool.svg);
+  background-repeat: no-repeat;
+}
+
 .section-edge-descr {
-  padding-top: 10px;
+  padding-top: 160px;
+  padding-left: 45px;
+  max-width: 233px;
+  margin: 0;
+  padding-bottom: 41px;
+}
+
+.edge-img-pos {
+  background-position: 45px 40px;
 }
 
 /* Place */
@@ -208,13 +341,60 @@ background-repeat: no-repeat;
 
 .section-place-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -23px;
 }
 
 .section-place-item {
-  flex: 1 1 33.33%;
-}
-
-.section-place-item:not(:last-child) {
+  max-width: 374px;
   margin-right: 23px;
   margin-bottom: 23px;
+}
+
+.section-place-price {
+  padding-left: 45px;
+  margin-right: 44px;
+}
+
+.section-place-info {
+  padding-top: 36px;
+}
+
+.price-star-position {
+  align-items: center;
+  display: flex;
+}
+
+.section-place-headitem {
+  padding-left: 45px;
+  margin-top: 0;
+  padding-top: 16px;
+}
+
+.section-place-geo {
+  padding-left: 45px;
+  margin-top: 0;
+  padding-top: 16px;
+}
+
+.place-btn-numbers {
+  padding-left: 45px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.section-place-item-all {
+  background-image: url(/weblayout/06_layout-flexbox/img/all-var.jpg);
+  background-repeat: no-repeat;
+  min-width: 350px;
+  background-size: auto 100%;
+}
+
+.section-place-allvar {
+  color: #ffff;
+}
+
+.section-place-allvar-pos {
+  padding-top: 373px;
+  padding-left: 45px;
 }
