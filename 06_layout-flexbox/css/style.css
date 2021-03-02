@@ -125,6 +125,7 @@ padding-right: 65px;
   min-width: 573px;
   min-height: 258px;
   margin-bottom: 23px;
+  background-color: aquamarine;
 }
 
 .section-spec-item-two {
@@ -133,6 +134,7 @@ padding-right: 65px;
   background-repeat: no-repeat;
   min-width: 573px;
   min-height: 259px;
+  background-color: aquamarine;
 }
 
 .section-spec-item-three {
@@ -141,6 +143,7 @@ background-size: auto 100%;
 background-repeat: no-repeat;
 min-width: 573px;
 min-height: 540px;
+background-color: aquamarine;
 }
 
 .section-spec-heading {
@@ -220,7 +223,7 @@ min-height: 540px;
   outline: 3px solid red;
   margin-right: 23px;
   margin-bottom: 23px;
-  padding-top: 160px;
+  padding: 160px 20px 20px 45px;
 }
 
 .serv-img-one{
@@ -243,12 +246,6 @@ min-height: 540px;
   background-repeat: no-repeat;
 }
 
-.section-serv-head {
-  padding-left: 45px;
-}
-.section-serv-descr {
-  padding-left: 45px;
-}
 
 /* Edge */
 
@@ -272,7 +269,7 @@ min-height: 540px;
   min-width: 275px;
   outline: 3px solid red;
   margin-right: 23px;
-  margin-bottom: 23px
+  margin-bottom: 23px;
 }
 
 .edge-img1 {
@@ -352,12 +349,11 @@ min-height: 540px;
 }
 
 .section-place-price {
-  padding-left: 45px;
   margin-right: 44px;
 }
 
 .section-place-info {
-  padding-top: 36px;
+  padding: 36px 20px 20px 45px;
 }
 
 .price-star-position {
@@ -366,19 +362,16 @@ min-height: 540px;
 }
 
 .section-place-headitem {
-  padding-left: 45px;
   margin-top: 0;
   padding-top: 16px;
 }
 
 .section-place-geo {
-  padding-left: 45px;
   margin-top: 0;
   padding-top: 16px;
 }
 
 .place-btn-numbers {
-  padding-left: 45px;
   margin-top: 0;
   padding-top: 20px;
 }
