@@ -127,12 +127,12 @@ img {
 }
 
 .header-bottom {
-display: flex;
-align-items: center;
-padding: 10px 45px;
-border-radius: 15px;
-min-height: 70px;
-background-color: #ffff;
+  display: flex;
+  align-items: center;
+  padding: 10px 45px;
+  border-radius: 15px;
+  min-height: 70px;
+  background-color: #ffff;
 }
 
 .nav {
@@ -233,10 +233,10 @@ background-color: #ffff;
   border-radius: 15px;
   min-width: 573px;
   min-height: 540px;
-background-image: url(../img/lux.jpg);
-background-size: auto 100%;
-background-repeat: no-repeat;
-background-color: rgb(92, 92, 92);
+  background-image: url(../img/lux.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(92, 92, 92);
 }
 
 .section-spec-heading {
@@ -598,4 +598,302 @@ background-color: rgb(92, 92, 92);
   width: 11px;
   height: 11px;
   transform: rotate(45deg) translateX(2px);
+}
+
+/* Wnat tour */
+
+.section-contacts {
+  padding-top: 35px;
+}
+
+.tour-container {
+  border-radius: 15px;
+  background-color: #e0e0e0;
+  padding: 38px 45px 71px 40px;
+}
+
+.section-heading-tour {
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+  color: #000000;
+}
+
+.section-tour-form {
+  margin-left: 5px;
+  padding: 30px 28px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.form {
+  display: flex
+}
+
+.section-tour-form-points {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.point-city {
+  width: 189px;
+  padding-right: 20px;
+}
+
+.point-country {
+  width: 230px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #E1E1E1;
+}
+
+.point-date {
+  max-width: 182px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #E1E1E1;
+}
+
+.point-nights {
+  max-width: 142px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #E1E1E1;
+}
+
+.point-tourists {
+  max-width: 142px;
+  padding-right: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #E1E1E1;
+  border-right: 1px solid #E1E1E1;
+}
+.section-tour-form-heads {
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.points-border {
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: start;
+}
+
+.points-border-nights{
+  border-bottom: 1px solid #CCCCCC;
+  opacity: 1;
+}
+
+.points-border-tourists {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.btn {
+  margin-left: 20px;
+  border: 1px solid #CC9933;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #CC9933;
+  padding: 17px 30px;
+}
+
+.position-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 910px;
+}
+
+.section-contacts {
+  padding-top: 35px;
+  padding-bottom: 19px;
+}
+
+.section-heading-contacts {
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding-left: 40px;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.section-contacts-full {
+  display: flex;
+  padding: 44px 44px 46px 46px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.section-contacts-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 45px;
+  max-width: 380px;
+}
+
+.section-contacts-left-adr {
+  display: flex;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 23px;
+}
+
+.section-contacts-left-tel {
+  display: flex;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 31px;
+  padding-top: 25px;
+}
+
+.section-contacts-left-mail {
+  display: flex;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+
+.section-contacts-left-graph {
+  display: flex;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 23px;
+  padding-top: 25px;
+}
+
+.section-contacts-left-head {
+  min-width: 62px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+}
+
+.section-contacts-tel {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-contacts-mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-maps {
+  margin-top: 45px;
+  margin-left: 0;
+  max-width: 275px;
+}
+
+.section-contacts-number {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #CC9933;
+}
+
+.section-contacts-email {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #CC9933;
+}
+
+.section-contacts-left-adr-descr {
+  margin-left: 83px;
+  max-width: 229px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  color: #000000;
+}
+
+.section-contacts-mail {
+  margin-left: 84px;
+}
+
+.section-contacts-tel {
+  margin-left: 47px;
+}
+
+.section-contacts-graph-descr {
+  margin-left: 74px;
+  max-width: 214px;
+}
+
+.footer-container {
+  display: flex;
+  padding: 44px 51px 55px 52px;
+  border-radius: 15px;
+  background-color: #333333;
+}
+
+.footer-img {
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+}
+
+.footer-descr {
+  max-width: 320px;
+  padding-right: 20px;
+}
+
+.footer-descr-pos {
+  margin: 0;
+}
+
+.footer-descr-one {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer-descr-two {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer-policy {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  color: #CC9933;
+}
+
+.footer-contacts-descr {
+  max-width: 358px;
+  margin-left: 102px;
+}
+
+.footer-adr {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.footer-tel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.footer-mail {
+  display: flex;
+  flex-direction: column;
 }
