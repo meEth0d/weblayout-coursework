@@ -607,9 +607,10 @@ img {
 }
 
 .tour-container {
+  padding: 38px 45px 71px 40px;
+  align-items: center;
   border-radius: 15px;
   background-color: #e0e0e0;
-  padding: 38px 45px 71px 40px;
 }
 
 .section-heading-tour {
@@ -629,46 +630,47 @@ img {
 }
 
 .form {
-  display: flex
+  display: flex;
+  align-items: center;
 }
 
 .section-tour-form-points {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .point-city {
-  width: 189px;
   padding-right: 20px;
+  width: 189px;
 }
 
 .point-country {
-  width: 230px;
   padding-right: 20px;
   padding-left: 20px;
+  width: 230px;
   border-left: 1px solid #E1E1E1;
 }
 
 .point-date {
-  max-width: 182px;
   padding-right: 20px;
   padding-left: 20px;
+  max-width: 182px;
   border-left: 1px solid #E1E1E1;
 }
 
 .point-nights {
-  max-width: 142px;
   padding-right: 20px;
   padding-left: 20px;
+  max-width: 142px;
   border-left: 1px solid #E1E1E1;
 }
 
 .point-tourists {
-  max-width: 142px;
   padding-right: 10px;
   padding-left: 20px;
+  max-width: 142px;
   border-left: 1px solid #E1E1E1;
   border-right: 1px solid #E1E1E1;
 }
@@ -681,16 +683,15 @@ img {
 
 .points-border {
   padding: 0;
+  text-align: start;
   border: 0;
   font-size: 16px;
   font-weight: normal;
   line-height: 1;
-  text-align: start;
 }
 
 .points-border-nights{
   border-bottom: 1px solid #CCCCCC;
-  opacity: 1;
 }
 
 .points-border-tourists {
@@ -699,11 +700,12 @@ img {
 
 .btn {
   margin-left: 20px;
+  padding: 13px 30px;
   border: 1px solid #CC9933;
   border-radius: 15px;
-  background-color: #ffffff;
+  cursor: pointer;
   color: #CC9933;
-  padding: 17px 30px;
+  background-color: #ffffff;
 }
 
 .position-form {
@@ -742,38 +744,42 @@ img {
 
 .section-contacts-left-adr {
   display: flex;
-  border-bottom: 1px solid #c4c4c4;
   padding-bottom: 23px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .section-contacts-left-tel {
   display: flex;
-  border-bottom: 1px solid #c4c4c4;
-  padding-bottom: 31px;
   padding-top: 25px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .section-contacts-left-mail {
   display: flex;
-  border-bottom: 1px solid #c4c4c4;
-  padding-bottom: 30px;
   padding-top: 25px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .section-contacts-left-graph {
   display: flex;
-  border-bottom: 1px solid #c4c4c4;
-  padding-bottom: 23px;
   padding-top: 25px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .section-contacts-left-head {
-  min-width: 62px;
   margin: 0;
+  min-width: 62px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1;
   color: #000000;
+}
+
+.picture-tours {
+  min-height: 528px;
 }
 
 .section-contacts-tel {
@@ -789,7 +795,11 @@ img {
 .btn-maps {
   margin-top: 45px;
   margin-left: 0;
-  max-width: 275px;
+  padding: 27px 29px;
+  max-width: 215px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .section-contacts-number {
@@ -827,6 +837,10 @@ img {
 .section-contacts-graph-descr {
   margin-left: 74px;
   max-width: 214px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #000000;
 }
 
 .footer-container {
@@ -839,11 +853,13 @@ img {
 .footer-img {
   background-image: url(../img/footer.png);
   background-repeat: no-repeat;
+  background-size: 255px;
+  background-position: right 190px bottom;
 }
 
 .footer-descr {
-  max-width: 320px;
   padding-right: 20px;
+  max-width: 320px;
 }
 
 .footer-descr-pos {
@@ -874,8 +890,8 @@ img {
 }
 
 .footer-contacts-descr {
-  max-width: 358px;
   margin-left: 102px;
+  max-width: 358px;
 }
 
 .footer-adr {
@@ -896,4 +912,41 @@ img {
 .footer-mail {
   display: flex;
   flex-direction: column;
+}
+
+.footer-icon-list {
+  margin-left: auto;
+}
+
+.footer-icon-item {
+  margin-bottom: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+.icon-trip {
+  background-image: url(../img/tripadvisor.svg);
+}
+
+.icon-twitter {
+  background-image: url(../img/twitter.svg);
+}
+
+.icon-facebook {
+  background-image: url(../img/facebook.svg);
+}
+
+.icon-vk {
+  background-image: url(../img/social.svg);
+}
+
+.icon-inst {
+  background-image: url(../img/instagram.svg);
 }
