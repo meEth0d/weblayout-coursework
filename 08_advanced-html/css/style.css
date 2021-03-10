@@ -785,11 +785,13 @@ img {
 .section-contacts-tel {
   display: flex;
   flex-direction: column;
+  margin-left: 47px;
 }
 
 .section-contacts-mail {
   display: flex;
   flex-direction: column;
+  margin-left: 84px;
 }
 
 .btn-maps {
@@ -824,14 +826,6 @@ img {
   font-weight: normal;
   line-height: 24px;
   color: #000000;
-}
-
-.section-contacts-mail {
-  margin-left: 84px;
-}
-
-.section-contacts-tel {
-  margin-left: 47px;
 }
 
 .section-contacts-graph-descr {
