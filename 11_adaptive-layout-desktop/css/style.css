@@ -77,6 +77,10 @@ body {
 
 /* Header */
 
+.header {
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -499,11 +503,13 @@ body {
 }
 
 .section-questions__link {
+  margin: 0;
   padding: 41px 80px 37px 5px;
   display: block;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+  cursor: pointer;
   color: var(--color-main-text);
   transition-property: color;
   transition-duration: .2s;
@@ -521,7 +527,7 @@ body {
 .section-questions__link::after {
   content: '';
   position: absolute;
-  top: 29px;
+  top: 50%;
   right: 1px;
   width: 50px;
   height: 50px;
@@ -531,6 +537,7 @@ body {
   background-color: #ECECEC;
   background-size: 31px;
   background-position: center;
+  transform: translateY(-50%);
   transition-property: background;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
@@ -624,7 +631,7 @@ body {
   margin-bottom: 19px;
   padding: 4px 0 0 0;
   font-size: 48px;
-  font-weight: 40;
+  font-weight: 400;
   line-height: 59px;
   color: var(--color-grey-text);
 }
@@ -766,9 +773,14 @@ body {
 }
 
 @media (max-width: 1680px) {
+
+  /* Hero */
+
   .section-hero__all {
     padding-right: 300px;
   }
+
+  /* About */
 
   .section-about__left {
     padding: 576px 66px 42px 54px;
@@ -779,9 +791,13 @@ body {
     max-height: 100%;
   }
 
+  /* Work */
+
   .section-work__step-left {
     width: 46%;
   }
+
+  /* Footer */
 
   .footer__content {
     justify-content: space-between;
@@ -797,9 +813,14 @@ body {
 }
 
 @media (max-width:1280px) {
+
+  /* Header */
+
   .header__item:not(:last-child) {
     margin-right: 35px;
   }
+
+  /* About */
 
   .section-about__content {
     display: block;
@@ -822,6 +843,8 @@ body {
     max-width: 100%;
   }
 
+  /* Footer */
+
   .footer__right {
     display: none;
   }
@@ -829,9 +852,11 @@ body {
 
 @media (max-width: 1024px) {
   .container {
-    margin-left: 30px;
     margin-right: 30px;
+    margin-left: 30px;
   }
+
+  /* Header */
 
   .header__burger {
     position: relative;
@@ -886,6 +911,8 @@ body {
     height: 48px;
   }
 
+  /* Hero */
+
   .section-hero {
     padding-bottom: 29px;
   }
@@ -912,6 +939,8 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
+
+  /* About */
 
   .section-about {
     padding-top: 29px;
@@ -973,6 +1002,8 @@ body {
     background-position-y: 62px;
   }
 
+  /* Work */
+
   .section-work {
     padding-top: 29px;
     padding-bottom: 29px;
@@ -1009,31 +1040,16 @@ body {
     background-image: url(../img/work1024.jpg);
   }
 
+  /* Questions */
+
   .section-questions {
     padding-top: 29px;
-    padding-bottom: 54px;
+    padding-bottom: 49px;
   }
 
   .section-questions__heading {
     padding: 0;
   }
-
-  /* .section-questions__item {
-    padding-left: 1px;
-  }
-
-  /* .one-quas,
-  .three-quas,
-  .five-quas {
-    padding-top: 39px;
-    padding-bottom: 37px
-  }
-
-  .two-quas,
-  .four-quas {
-    padding-top: 33px;
-    padding-bottom: 29px;
-  } */
 
   .section-questions__link {
     width: 100%;
@@ -1045,33 +1061,15 @@ body {
     right: 0;
   }
 
-  .one-link {
-    padding: 39px 80px 38px 1px;
-  }
-
-  .two-link {
-    padding: 31px 155px 29px 1px;
-  }
-
-  .three-link {
-    padding: 40px 80px 38px 1px;
-  }
-
-  .four-link {
-    padding: 32px 80px 28px 1px;
-  }
-
-  .five-link {
-    padding: 40px 80px 38px 1px;
-  }
+  /* Footer */
 
   .footer {
     padding-top: 47px;
   }
 
   .footer__content {
-    justify-content: normal;
     flex-wrap: wrap;
+    justify-content: normal;
   }
 
   .footer__left {
@@ -1101,6 +1099,8 @@ body {
 
 @media (max-width: 768px) {
 
+  /* Header */
+
   .header-container {
     min-height: 69px;
   }
@@ -1114,6 +1114,8 @@ body {
     padding: 0;
   }
 
+  /* Hero */
+
   .section-hero__all {
     background-image: url(../img/hero768.jpg);
   }
@@ -1126,13 +1128,15 @@ body {
     padding: 28px 36px 24px 36px;
   }
 
+  /* About */
+
   .section-about__heading {
     padding: 4px 220px 0 0;
   }
 
   .section-about__description {
-    padding-left: 2px;
     margin-bottom: 60px;
+    padding-left: 2px;
   }
 
   .section-about__info {
@@ -1168,6 +1172,8 @@ body {
     background-position-y: 69px;
   }
 
+  /* Work */
+
   .section-work__heading {
     margin-left: -4px;
     padding: 5px 0 0 0;
@@ -1195,8 +1201,8 @@ body {
   }
 
   .section-work__step::after {
-    margin-left: 1px;
     margin-bottom: 39px;
+    margin-left: 1px;
     width: 100%;
     height: 284px;
   }
@@ -1205,71 +1211,23 @@ body {
     background-image: url(../img/work768.jpg);
   }
 
+  /* Questions */
+
   .section-questions {
     padding-top: 34px;
-    padding-left: 2px;
     padding-bottom: 60px;
+    padding-left: 2px;
+  }
+
+  .section-questions__link {
+    padding: 32px 60px 31px 5px;
   }
 
   .section-questions__heading {
     margin-right: -30px;
   }
 
-
-  .one-link {
-    padding: 39px 80px 38px 3px;
-  }
-
-  .two-link {
-    padding: 32px 80px 28px 3px;
-  }
-
-  .three-link {
-    padding: 31px 195px 29px 3px;
-  }
-
-  .four-link {
-    padding: 32px 118px 28px 3px;
-  }
-
-  .five-link {
-    padding: 32px 110px 28px 3px;
-  }
-  /* .section-questions__list {
-    padding-left: 2px;
-  }
-
-  .two-quas,
-  .three-quas,
-  .four-quas,
-  .five-quas {
-    padding-top: 32px;
-    padding-bottom: 28px;
-  }
-
-  .one-link {
-    width: 570px;
-  }
-
-  .two-link {
-    width: 490px;
-  }
-
-  .three-link {
-    width: 465px;
-  }
-
-  .four-link {
-    width: 530px;
-  }
-
-  .five-link {
-    width: 490px;
-  }
-
-  .section-questions__link::after {
-   right: 0;
-  } */
+  /* Footer */
 
   .footer {
     padding-bottom: 60px;
@@ -1293,9 +1251,10 @@ body {
   }
 
   .footer__blank {
-    max-width: 540px;
     margin-bottom: 59px;
+    padding-top: 12px;
     padding-bottom: 0;
+    max-width: 540px;
   }
 
   .footer__form {
@@ -1307,19 +1266,27 @@ body {
   .footer__textform {
     width: 99%;
   }
+
+  .footer__textform {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 640px) {
 
   .container {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
+
+  /* Hero */
 
   .section-hero__heading {
     font-size: 34px;
     line-height: 40px;
   }
+
+  /* About */
 
   .section-about__down {
     display: block;
@@ -1330,14 +1297,16 @@ body {
   }
 
   .section-about__item {
-    max-height: 100%;
     padding: 38px 15px 34px 115px;
+    max-height: 100%;
   }
 
   .section-about__title {
     font-size: 20px;
     line-height: 25px;
   }
+
+  /* Work */
 
   .item-one {
     background-position-x: 6px;
@@ -1350,6 +1319,8 @@ body {
   .section-work__item:not(:last-child) {
     margin-right: auto;
   }
+
+  /* Footer */
 
   .footer__blank {
     min-width: auto;
@@ -1370,9 +1341,9 @@ body {
   }
 
   .footer__left {
+    text-align: center;
     margin-right: 0;
     min-width: auto;
-    text-align: center;
   }
 
   .footer__social {
@@ -1383,10 +1354,12 @@ body {
 @media (max-width:320px) {
 
   .container {
-    padding: 0;
-    margin-left: 15px;
     margin-right: 15px;
+    margin-left: 15px;
+    padding: 0;
   }
+
+  /* Header */
 
   .header-container {
     min-height: 45px;
@@ -1403,10 +1376,10 @@ body {
   }
 
   .header__burger {
+    order: 1;
     margin-right: 0;
     margin-left: auto;
     width: 25px;
-    order: 1;
   }
 
   .header__burger::before {
@@ -1416,6 +1389,8 @@ body {
   .header__burger::after {
     bottom: 2px;
   }
+
+  /* Hero */
 
   .hero-content {
     text-align: center;
@@ -1446,10 +1421,12 @@ body {
   }
 
   .section-hero__all {
+    min-height: 100%;
     background-image: url(../img/hero320.jpg);
     background-size: cover;
-    min-height: 100%;
   }
+
+  /* About */
 
   .section-about {
     padding-top: 19px;
@@ -1498,10 +1475,10 @@ body {
 
   .section-about__button {
     padding: 11px 41px 11px 44px;
+    border: 2px solid #FF9900;
     font-size: 12px;
     line-height: 15px;
     color: #FF9900;
-    border: 2px solid #FF9900;
   }
 
   .section-about__info {
@@ -1541,14 +1518,16 @@ body {
     line-height: 28px;
   }
 
+  /* Work */
+
   .section-work {
     padding-top: 25px;
     padding-bottom: 18px;
   }
 
   .section-work__heading {
-    margin-left: 0;
     margin-bottom: 28px;
+    margin-left: 0;
     font-size: 24px;
     line-height: 29px;
   }
@@ -1568,12 +1547,12 @@ body {
   }
 
   .section-work__step_consultation::after {
-    margin-left: 0;
     margin-bottom: 7px;
+    margin-left: 0;
     height: 160px;
     background-image: url(../img/work320.jpg);
-    background-size: contain;
     background-position: top;
+    background-size: contain;
   }
 
   .section-work__step-left {
@@ -1609,15 +1588,17 @@ body {
     padding: 11px 31px 12px 32px;
   }
 
+  /* Questions */
+
   .section-questions {
-    padding-left: 0;
     padding-top: 23px;
     padding-bottom: 39px;
+    padding-left: 0;
   }
 
   .section-questions__heading {
-    margin-bottom: 12px;
     margin-right: 0;
+    margin-bottom: 12px;
     font-size: 24px;
     font-weight: normal;
     line-height: 29px;
@@ -1628,6 +1609,7 @@ body {
   }
 
   .section-questions__link {
+    padding: 30px 40px 30px 1px;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -1639,71 +1621,7 @@ body {
     background-size: 18px;
   }
 
-  /* .one-quas {
-    padding-top: 31px;
-    padding-bottom: 30px;
-  }
-
-  .two-quas {
-    padding-top: 30px;
-    padding-bottom: 29px;
-  }
-
-  .three-quas {
-    padding-top: 31px;
-    padding-bottom: 29px;
-  }
-
-  .four-quas {
-    padding-top: 32px;
-    padding-bottom: 28px;
-  }
-
-  .five-quas {
-    padding-top: 32px;
-    padding-bottom: 28px;
-  }
-
-  .one-link {
-    width: 78%;
-  }
-
-  .two-link {
-    width: 78%;
-  }
-
-  .three-link {
-    width: 87%;
-  }
-
-  .four-link {
-    width: 85%;
-  }
-
-  .five-link {
-    width: 83%;
-  } */
-
-
-  .one-link {
-    padding: 31px 60px 30px 1px;
-  }
-
-  .two-link {
-    padding: 30px 80px 30px 1px;
-  }
-
-  .three-link {
-    padding: 30px 80px 29px 1px;
-  }
-
-  .four-link {
-    padding: 30px 38px 30px 1px;
-  }
-
-  .five-link {
-    padding: 30px 39px 30px 1px;
-  }
+  /* Footer */
 
   .footer {
     padding-top: 28px;
@@ -1716,6 +1634,7 @@ body {
 
   .footer__blank {
     margin-bottom: 23px;
+    padding-top: 9px;
     min-width: auto;
   }
 
@@ -1732,28 +1651,24 @@ body {
   .footer__nameform,
   .footer__emailform,
   .footer__textform {
+    padding-left: 20px;
+    width: 290px;
     font-size: 14px;
   }
 
-  .footer__nameform,
-  .footer__emailform,
-  .footer__textform {
-    padding-left: 20px;
-  }
-
   .footer__downform {
+    display: block;
+    text-align: center;
     padding-bottom: 24px;
     border-bottom: 1px solid #595959;
-    text-align: center;
-    display: block;
   }
 
   .footer__button {
+    margin-bottom: 12px;
+    margin-left: 10px;
+    padding: 12px 27px 13px 29px;
     font-size: 12px;
     line-height: 15px;
-    padding: 12px 27px 13px 29px;
-    margin-left: 10px;
-    margin-bottom: 12px;
   }
 
   .footer__checkbox + .footer__spancheck {
@@ -1763,12 +1678,6 @@ body {
 
   .footer__labelcheck {
     display: block;
-  }
-
-  .footer__nameform,
-  .footer__emailform,
-  .footer__textform {
-    width: 290px;
   }
 
   .footer__textform {
