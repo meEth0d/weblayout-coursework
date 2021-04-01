@@ -11,23 +11,26 @@
 <body>
   <header class="header">
     <div class="container header-container">
-      <img src="img/logo.png" alt="Евклид" class="logo">
+      <button class="header__burger">
+        <span></span>
+      </button>
+      <img class="logo" src="img/logo.png" alt="Евклид">
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="" class="header__descr">О нас</a>
+            <a class="header__descr" href="">О нас</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__descr">Проекты</a>
+            <a class="header__descr" href="">Проекты</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__descr">Этапы</a>
+            <a class="header__descr" href="">Этапы</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__descr">Отзывы</a>
+            <a class="header__descr" href="">Отзывы</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__descr">Контакты</a>
+            <a class="header__descr" href="">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -42,16 +45,18 @@
   <main>
     <section class="section-hero">
       <div class="container hero-container">
-        <div class="hero-content">
-          <h1 class="section-hero__heading">
-            Проектные решения любой сложности
-          </h1>
-          <p class="section-hero__descr">
-            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-          </p>
-          <button class="btn section-hero__button">
-            Заказать расчёт
-          </button>
+        <div class="section-hero__all">
+          <div class="hero-content">
+            <h1 class="section-hero__heading">
+              Проектные решения любой сложности
+            </h1>
+            <p class="section-hero__descr">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+            </p>
+            <button class="btn section-hero__button">
+              Заказать расчёт
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -62,7 +67,7 @@
           О нас
         </h2>
         <p class="section-about__description">
-          Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип       будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
+          Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип <span class="section-about__description-icon"></span> будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
         </p>
         <div class="section-about__content">
           <div class="section-about__left">
@@ -104,16 +109,16 @@
         </h2>
         <ul class="section-work__list">
           <li class="section-work__item">
-            <a href="" class="section-work__link">1 шаг</a>
+            <a class="section-work__link" href="">1 шаг</a>
           </li>
           <li class="section-work__item">
-            <a href="" class="section-work__link">2 шаг</a>
+            <a class="section-work__link" href="">2 шаг</a>
           </li>
           <li class="section-work__item">
-            <a href="" class="section-work__link">3 шаг</a>
+            <a class="section-work__link" href="">3 шаг</a>
           </li>
           <li class="section-work__item">
-            <a href="" class="section-work__link">4 шаг</a>
+            <a class="section-work__link" href="">4 шаг</a>
           </li>
         </ul>
         <div class="section-work__content">
@@ -149,19 +154,39 @@
         <div>
           <ul class="section-questions__list">
             <li class="section-questions__item">
-              <a href="" class="section-questions__link">Из чего формируется конечная стоимость проекта?</a>
+              <div>
+                <h3 class="section-questions__link">
+                  Из чего формируется конечная стоимость проекта?
+                </h3>
+              </div>
             </li>
             <li class="section-questions__item">
-              <a href="" class="section-questions__link">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</a>
+              <div>
+                <h3 class="section-questions__link">
+                  У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+                </h3>
+              </div>
             </li>
             <li class="section-questions__item">
-              <a href="" class="section-questions__link">Я выбираю между разными компаниями. В чём ваше отличие?</a>
+              <div>
+                <h3 class="section-questions__link">
+                  Я выбираю между разными компаниями. В чём ваше отличие?
+                </h3>
+              </div>
             </li>
             <li class="section-questions__item">
-              <a href="" class="section-questions__link">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </a>
+              <div>
+                <h3 class="section-questions__link">
+                  Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
+                </h3>
+              </div>
             </li>
             <li class="section-questions__item">
-              <a href="" class="section-questions__link">Могу ли я вернуть деньги на каком-либо из этапов работ?</a>
+              <div>
+                <h3 class="section-questions__link">
+                  Могу ли я вернуть деньги на каком-либо из этапов работ?
+                </h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -173,36 +198,36 @@
     <div class="container">
       <div class="footer__content">
         <div class="footer__left">
-          <img src="img/logofooter.png" alt="Евклид" class="footer__logo">
+          <img class="footer__logo" src="img/logofooter.png" alt="Евклид">
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="" class="footer__link">О нас</a>
+              <a class="footer__link" href="">О нас</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Проекты</a>
+              <a class="footer__link" href="">Проекты</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Отзывы</a>
+              <a class="footer__link" href="">Отзывы</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Договор оферты</a>
+              <a class="footer__link" href="">Договор оферты</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Договор подряда</a>
+              <a class="footer__link" href="">Договор подряда</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Конфиденциальность</a>
+              <a class="footer__link" href="">Конфиденциальность</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Партнёрское соглашение</a>
+              <a class="footer__link" href="">Партнёрское соглашение</a>
             </li>
           </ul>
           <div class="footer__social">
-            <a href="" class="footer__soclink icon-fb">
+            <a class="footer__soclink icon-fb" href="">
             </a>
-            <a href="" class="footer__soclink icon-vk">
+            <a class="footer__soclink icon-vk" href="">
             </a>
-            <a href="" class="footer__soclink icon-inst">
+            <a class="footer__soclink icon-inst" href="">
             </a>
           </div>
         </div>
@@ -210,16 +235,16 @@
           <h2 class="footer__blankhead">
             Оставить заявку
           </h2>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="footer__form">
+          <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <input class="footer__nameform" type="text" name="name" required placeholder="Фамилия, имя и отчество*">
             <input class="footer__emailform" type="email" name="email" required placeholder="E-mail*">
             <textarea class="footer__textform" name="message" cols="30" rows="5" placeholder="Сообщение"></textarea>
-            <div>
-              <button type="submit" class="btn footer__button">
+            <div class="footer__downform">
+              <button class="btn footer__button" type="submit">
                 Отправить данные
               </button>
-              <label for="check" class="footer__labelcheck">
-                <input type="checkbox" name="agree" id="check" required class="footer__checkbox">
+              <label class="footer__labelcheck" for="check">
+                <input class="footer__checkbox" id="check" type="checkbox" name="agree" required>
                 <span class="footer__spancheck"></span>
                 <span class="footer__checktext">Согласен на обработку данных</span>
               </label>
