@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Евклид</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <script src="js/swiper.js" defer></script>
+  <script src="js/tabs.js" defer></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"defer></script>
+  <script src="js/accordion.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -48,26 +53,10 @@
     </div>
   </header>
   <main>
-
     <section class="section-hero">
       <div class="container hero-container">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="../13_javascript/img/hero.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="../13_javascript/img/hero2.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="../13_javascript/img/hero3.jpg" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         <div class="section-hero__all">
-          <div class="hero-content">
+          <div class="section-hero__content">
             <h1 class="section-hero__heading">
               Проектные решения любой сложности
             </h1>
@@ -78,6 +67,16 @@
               Заказать расчёт
             </button>
           </div>
+
+          <div class="swiper-container section-hero__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide section-hero__slide section-hero__slide_1"></div>
+              <div class="swiper-slide section-hero__slide section-hero__slide_2"></div>
+              <div class="swiper-slide section-hero__slide section-hero__slide_3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev section-hero__nav-arrow"></div>
+            <div class="swiper-button-next section-hero__nav-arrow"></div>
         </div>
       </div>
     </section>
@@ -165,7 +164,7 @@
           </div>
         </div>
         <div class="section-work__content tab-content tab-content-active" data-target="two">
-          <div class="section-work__step section-work__step_consultation">
+          <div class="section-work__step section-work__step_smeta">
             <div class="section-work__step-left">
               <div>
                 <h3 class="section-work__title">
@@ -187,14 +186,14 @@
           </div>
         </div>
         <div class="section-work__content tab-content tab-content-active" data-target="three">
-          <div class="section-work__step section-work__step_consultation">
+          <div class="section-work__step section-work__step_contractor">
             <div class="section-work__step-left">
               <div>
                 <h3 class="section-work__title">
-                  Проводим консультацию
+                  Привлекаем подрядчиков
                 </h3>
                 <p class="section-work__text">
-                  Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                  Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
                 </p>
               </div>
               <div>
@@ -209,14 +208,14 @@
           </div>
         </div>
         <div class="section-work__content tab-content tab-content-active" data-target="four">
-          <div class="section-work__step section-work__step_consultation">
+          <div class="section-work__step section-work__step_inspector">
             <div class="section-work__step-left">
               <div>
                 <h3 class="section-work__title">
-                  Проводим консультацию
+                  Инспектируем все этапы работ
                 </h3>
                 <p class="section-work__text">
-                  Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                  Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
                 </p>
               </div>
               <div>
@@ -241,10 +240,15 @@
         <div>
           <ul class="section-questions__list">
             <li class="section-questions__item">
-              <div>
+              <div id="accordion">
                 <h3 class="section-questions__link">
                   Из чего формируется конечная стоимость проекта?
                 </h3>
+                <div>
+                  <p>
+                    Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов. Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="section-questions__item">
@@ -252,6 +256,11 @@
                 <h3 class="section-questions__link">
                   У меня есть свой проект. Сможем ли мы его доработать / реализовать?
                 </h3>
+                <div>
+                  <p>
+                    Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов. Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="section-questions__item">
@@ -346,9 +355,5 @@
       </div>
     </div>
   </footer>
-
-  <script src="../13_javascript/js/swiper.js"></script>
-
-  <script src="../13_javascript/js/tabs.js"></script>
 </body>
 </html>
