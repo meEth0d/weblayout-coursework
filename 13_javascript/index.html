@@ -17,6 +17,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
   <script src="js/accordion.js" defer></script>
   <script src="js/menu.js" defer></script>
+  <script src="js/search.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -25,7 +26,7 @@
         <span></span>
       </button>
       <img class="logo" src="img/logo.png" alt="Евклид">
-      <nav id="menu" class="header__nav">
+      <nav id="menu" class="header__nav nav-active">
         <ul class="header__list">
           <li class="header__item">
             <a class="header__descr" href="">О нас</a>
@@ -44,15 +45,32 @@
           </li>
         </ul>
       </nav>
-      <form class="header__form" action="">
-        <input class="header__form-search" type="text" placeholder="Что будем искать?">
-        <button class="header__search">
-          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333"/>
+      <div class="header__form-container form-active">
+        <form class="header__form" action="">
+          <div class="header__input-cont">
+            <input class="header__input" type="search" placeholder="Что будем искать?">
+          </div>
+          <button class="header__form-search">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333"/>
+              <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2"/>
+              </svg>
+          </button>
+        </form>
+        <button class="header__form-close">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8.58081" y="7" width="11.1785" height="2.2357" transform="rotate(45 8.58081 7)" fill="#333333"/>
+            <rect x="7" y="14.9044" width="11.1785" height="2.2357" transform="rotate(-45 7 14.9044)" fill="#333333"/>
             <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2"/>
             </svg>
         </button>
-      </form>
+      </div>
+      <button class="header__search">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333"/>
+          <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2"/>
+          </svg>
+      </button>
     </div>
   </header>
   <main>

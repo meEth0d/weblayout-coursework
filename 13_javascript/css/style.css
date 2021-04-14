@@ -94,7 +94,6 @@ body {
 .header__nav {
   margin-left: auto;
   padding: 10px 55px;
-  display: none;
 }
 
 .header__list {
@@ -132,20 +131,6 @@ body {
   margin-right: 85px;
 }
 
-.header__form {
-  position: absolute;
-  right: 0;
-}
-
-.header__form-search {
-  padding-left: 48px;
-  border-radius: 100px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
-  width: 945px;
-  height: 60px;
-  border: #FFFFFF;
-}
-
 .header__search {
   padding: 17px 12px 10px 10px;
   border: none;
@@ -175,6 +160,105 @@ body {
 .header__search:active circle {
   stroke: #E1670E;
 }
+
+.header__form-container {
+  padding: 5px 15px 5px 48px;
+  display: none;
+  align-items: center;
+  margin-left: auto;
+  width: 53.389%;
+  height: 60px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 100px;
+}
+
+.header__form {
+  display: flex;
+}
+
+.header__input-cont {
+  display: flex;
+  align-items: center;
+}
+
+.header__input {
+  padding: 5px 5px;
+  width: 802px;
+  border: none;
+  border-bottom: 1px solid #ADADAD;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header__form-search {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__form-close {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__form-search circle, rect {
+  transition-property: fill, stroke;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__form-search:hover rect {
+  fill: #FF9900;
+}
+
+.header__form-search:hover circle {
+  stroke: #FF9900;
+}
+
+.header__form-search:active rect {
+  fill: #E1670E;
+}
+
+.header__form-search:active circle {
+  stroke: #E1670E;
+}
+
+.header__form-close circle, rect {
+  transition-property: fill, stroke;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__form-close:hover rect {
+  fill: #FF9900;
+}
+
+.header__form-close:hover circle {
+  stroke: #FF9900;
+}
+
+.header__form-close:active rect {
+  fill: #E1670E;
+}
+
+.header__form-close:active circle {
+  stroke: #E1670E;
+}
+
+.form-active {
+  display: flex;
+}
+
+.nav-active {
+  display: none;
+}
+
 
 /* Hero */
 
