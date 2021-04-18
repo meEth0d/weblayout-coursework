@@ -926,7 +926,18 @@ body {
 }
 
 .footer__checkbox {
-  display: none;
+  /* display: none; */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
 
 .footer__checkbox + .footer__spancheck {
@@ -937,6 +948,10 @@ body {
   border: 1px solid #CACACA;
   width: 14px;
   height: 14px;
+}
+
+.footer__checkbox:focus + .footer__spancheck {
+  outline: 2px solid #FF9900;
 }
 
 .footer__checkbox + .footer__spancheck::before {

@@ -22,5 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
+
+    a11y: {
+      prevSlideMessage: 'Предыдущее фоновое изображение',
+      nextSlideMessage: 'Следующее фоновое изображение',
+      paginationBulletMessage: 'Перейти к фоновому изображению',
+    },
   });
 });

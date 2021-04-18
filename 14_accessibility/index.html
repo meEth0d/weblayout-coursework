@@ -45,7 +45,7 @@
           </li>
         </ul>
       </nav>
-      <button id="search" class="header__search" aria-label="Найти">
+      <button id="search" class="header__search" aria-label="Открыть поисковую строку">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333"/>
           <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2"/>
@@ -54,15 +54,15 @@
       <div id="find" class="header__form-container">
         <form class="header__form" action="/" method="GET">
           <div class="header__input-cont">
-            <input class="header__input" type="search" placeholder="Что будем искать?">
+            <input class="header__input js-search-input" type="search" placeholder="Что будем искать?" tabindex="-1">
           </div>
-          <button class="header__form-search" type="submit" aria-label="Найти">
+          <button class="header__form-search js-search-btn" type="submit" aria-label="Найти" tabindex="-1">
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333"/>
               <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2"/>
               </svg>
           </button>
-          <button id="closesearch" class="header__form-close" type="button" aria-label="Закрыть поиск">
+          <button id="closesearch" class="header__form-close js-search-close" type="button" aria-label="Закрыть поиск" tabindex="-1">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="8.58081" y="7" width="11.1785" height="2.2357" transform="rotate(45 8.58081 7)" fill="#333333"/>
               <rect x="7" y="14.9044" width="11.1785" height="2.2357" transform="rotate(-45 7 14.9044)" fill="#333333"/>
@@ -357,7 +357,7 @@
                 Отправить данные
               </button>
               <label class="footer__labelcheck" for="check">
-                <input class="footer__checkbox" id="check" type="checkbox" name="agree" required>
+                <input class="footer__checkbox visually-hidden" id="check" type="checkbox" name="agree" required>
                 <span class="footer__spancheck"></span>
                 <span class="footer__checktext">Согласен на обработку данных</span>
               </label>
