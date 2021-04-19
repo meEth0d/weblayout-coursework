@@ -1822,6 +1822,14 @@ body {
     color: #FF9900;
   }
 
+  .section-about__button:hover {
+    color: var(--color-white-text);
+  }
+
+  .section-about__button:active {
+    color: var(--color-white-text);
+  }
+
   .section-about__info {
     max-width: 100%;
   }
