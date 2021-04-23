@@ -206,18 +206,20 @@ body {
   content: '';
   position: absolute;
   right: 15px;
+  margin-top: -4.5px;
   border-width: 0;
   border-top: 1px solid #CCB26E;
   border-left: 1px solid #CCB26E;
   width: 8px;
   height: 8px;
   border-color: #CCB26E;
-  transform: rotate(45deg);
+  transform: rotate(-135deg);
 }
 
 .choices[data-type*=select-one].is-open:after {
   border-color: #CCB26E;
-  transform: rotate(-135deg);
+  transform: rotate(45deg);
+  margin-top: -3px;
 }
 
 
@@ -363,6 +365,7 @@ body {
 }
 
 .tooltip__text {
+  display: inline;
   margin: 0;
   font-size: 14px;
   font-weight: normal;
@@ -370,32 +373,14 @@ body {
 }
 
 .tooltip__img {
-  display: block;
-  bottom: 5px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #BCBCBC;
-  background-image: url(../img/i.png);
-  background-repeat: no-repeat;
+  display: inline;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.tooltip__prompt {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 7px 15px 8px 15px;
-  background-color: #666666;
-  color: #FFFFFF;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-}
-
-.tooltip__img:hover {
-  background-color: #CCB26E;
-}
-
-.tooltip__img:hover + .tooltip__prompt {
-  opacity: 1;
+.tooltip__img:hover path {
+  fill: #CCB26E;
+  transition: fill .2s ease-in-out;
 }

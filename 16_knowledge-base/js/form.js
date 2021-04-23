@@ -22,4 +22,13 @@ new JustValidate('.form__set', {
       email: true
     },
   },
+  messages: {
+    name: {
+      required: 'Введите имя',
+      minLength: 'Поле должно содержать не менее 2 букв',
+      maxLength: 'Поле должно содержать не более 20 букв'
+    },
+    tel: 'Некорректный номер телефона',
+    mail: 'Некорретный email'
+  }
 });
