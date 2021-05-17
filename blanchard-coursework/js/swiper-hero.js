@@ -18,5 +18,7 @@ const slider = new Swiper('.hero__slider', {
     delay: 3000,
   },
 
-  speed: 800
+  speed: 800,
+
+  simulateTouch: false
 });

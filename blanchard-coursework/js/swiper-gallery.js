@@ -16,12 +16,33 @@ const swiper = new Swiper('.gallery__slider', {
   },
 
   breakpoints: {
+
+    320: {
+
+    },
+
     768: {
       slidesPerGroup: 2,
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerColumnFill: 'row',
       spaceBetween: 34
+    },
+
+    1024: {
+      slidesPerGroup: 2,
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerColumnFill: 'row',
+      spaceBetween: 34
+    },
+
+    1920: {
+      slidesPerGroup: 2,
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      slidesPerColumnFill: 'row',
+      spaceBetween: 50,
     }
   }
 
