@@ -26,127 +26,132 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
   <script src="js/accordion.js" defer></script>
   <script src="js/swiper-events.js" defer></script>
+  <script src="js/events-visible.js" defer></script>
 </head>
 <body>
 
   <header class="header">
-    <div class="container header__container">
-      <button id="burger" class="header__burger">
-        <span></span>
-      </button>
-      <picture class="header__pic">
-        <source srcset="img/logo3.svg" media="(min-width: 1920px)">
-        <source srcset="img/logo768.svg" media="(min-width: 768px)">
-        <img class="header__logo" src="img/logo.svg" alt="Blanchard">
-      </picture>
-      <nav id="menu" class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__desc" href="#">О нас</a>
-          </li>
-          <li class="header__item">
-            <a class="header__desc" href="#gallery">Галерея</a>
-          </li>
-          <li class="header__item">
-            <a class="header__desc" href="#">Каталог</a>
-          </li>
-          <li class="header__item">
-            <a class="header__desc" href="#">События</a>
-          </li>
-          <li class="header__item">
-            <a class="header__desc" href="#">Издания</a>
-          </li>
-          <li class="header__item">
-            <a class="header__desc" href="#">Проекты</a>
-          </li>
-          <li class="header__item">
-            <a class="header__desc" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div id="personal" class="header__personal">
-        <a class="header__personal-link" href="#">Войти</a>
-      </div>
-      <button id="search" class="header__search">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="5.02605" height="1.25651" transform="matrix(-0.71131 0.702878 0.71131 0.702878 3.57617 11.5841)" fill="white"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75929 13.3207C5.45281 13.3207 2.89432 10.5994 2.89432 7.40037C2.89432 4.2013 5.45281 1.48007 8.75929 1.48007C12.0658 1.48007 14.6243 4.2013 14.6243 7.40037C14.6243 10.5994 12.0658 13.3207 8.75929 13.3207ZM8.75929 14.8007C4.76036 14.8007 1.51858 11.4875 1.51858 7.40037C1.51858 3.31326 4.76036 0 8.75929 0C12.7582 0 16 3.31326 16 7.40037C16 11.4875 12.7582 14.8007 8.75929 14.8007Z" fill="white"/>
-          </svg>
-      </button>
-      <div id="find" class="header__form-container">
-        <div class="header__form-content">
-          <button id="closesearch" class="header__form-close js-search-close" tabindex="-1"></button>
-        <form class="header__form" action="/">
-          <div class="header__form-search-input">
-            <button class="header__form-search js-search-btn" type="submit" aria-label="Найти" tabindex="-1">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="5.02605" height="1.25651" transform="matrix(-0.71131 0.702878 0.71131 0.702878 3.57617 11.5841)" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75929 13.3207C5.45281 13.3207 2.89432 10.5994 2.89432 7.40037C2.89432 4.2013 5.45281 1.48007 8.75929 1.48007C12.0658 1.48007 14.6243 4.2013 14.6243 7.40037C14.6243 10.5994 12.0658 13.3207 8.75929 13.3207ZM8.75929 14.8007C4.76036 14.8007 1.51858 11.4875 1.51858 7.40037C1.51858 3.31326 4.76036 0 8.75929 0C12.7582 0 16 3.31326 16 7.40037C16 11.4875 12.7582 14.8007 8.75929 14.8007Z" fill="white"/>
-                </svg>
-            </button>
+    <div class="header__oversize">
+      <div class="container header__container">
+        <button id="burger" class="header__burger">
+          <span></span>
+        </button>
+        <picture class="header__pic">
+          <source srcset="img/logo3.svg" media="(min-width: 1920px)">
+          <source srcset="img/logo768.svg" media="(min-width: 768px)">
+          <img class="header__logo" src="img/logo.svg" alt="Blanchard">
+        </picture>
+        <nav id="menu" class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__desc" href="#">О нас</a>
+            </li>
+            <li class="header__item">
+              <a class="header__desc" href="#gallery">Галерея</a>
+            </li>
+            <li class="header__item">
+              <a class="header__desc" href="#">Каталог</a>
+            </li>
+            <li class="header__item">
+              <a class="header__desc" href="#">События</a>
+            </li>
+            <li class="header__item">
+              <a class="header__desc" href="#">Издания</a>
+            </li>
+            <li class="header__item">
+              <a class="header__desc" href="#">Проекты</a>
+            </li>
+            <li class="header__item">
+              <a class="header__desc" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="personal" class="header__personal">
+          <a class="header__personal-link" href="#">Войти</a>
+        </div>
+        <button id="search" class="header__search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="5.02605" height="1.25651" transform="matrix(-0.71131 0.702878 0.71131 0.702878 3.57617 11.5841)" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75929 13.3207C5.45281 13.3207 2.89432 10.5994 2.89432 7.40037C2.89432 4.2013 5.45281 1.48007 8.75929 1.48007C12.0658 1.48007 14.6243 4.2013 14.6243 7.40037C14.6243 10.5994 12.0658 13.3207 8.75929 13.3207ZM8.75929 14.8007C4.76036 14.8007 1.51858 11.4875 1.51858 7.40037C1.51858 3.31326 4.76036 0 8.75929 0C12.7582 0 16 3.31326 16 7.40037C16 11.4875 12.7582 14.8007 8.75929 14.8007Z" fill="white"/>
+            </svg>
+        </button>
+        <div id="find" class="header__form-container">
+          <div class="header__form-content">
+            <button id="closesearch" class="header__form-close js-search-close" tabindex="-1"></button>
+          <form class="header__form" action="/">
+            <div class="header__form-search-input">
+              <button class="header__form-search js-search-btn" type="submit" aria-label="Найти" tabindex="-1">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="5.02605" height="1.25651" transform="matrix(-0.71131 0.702878 0.71131 0.702878 3.57617 11.5841)" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75929 13.3207C5.45281 13.3207 2.89432 10.5994 2.89432 7.40037C2.89432 4.2013 5.45281 1.48007 8.75929 1.48007C12.0658 1.48007 14.6243 4.2013 14.6243 7.40037C14.6243 10.5994 12.0658 13.3207 8.75929 13.3207ZM8.75929 14.8007C4.76036 14.8007 1.51858 11.4875 1.51858 7.40037C1.51858 3.31326 4.76036 0 8.75929 0C12.7582 0 16 3.31326 16 7.40037C16 11.4875 12.7582 14.8007 8.75929 14.8007Z" fill="white"/>
+                  </svg>
+              </button>
+            </div>
+            <input class="header__search-input js-search-input" type="search" placeholder="Поиск по сайту" tabindex="-1">
+          </form>
           </div>
-          <input class="header__search-input js-search-input" type="search" placeholder="Поиск по сайту" tabindex="-1">
-        </form>
         </div>
       </div>
     </div>
-    <div class="container header__container-down">
-      <nav class="header__navdown">
-        <ul class="header__navlist">
-          <li class="header__dropdown"><a class="header__dropdown-title" href="#">Реализм</a>
-            <ul class="header__dropdown-list" data-simplebar>
-              <li class="header__dropdown-item realism-1"><a class="header__item-name" href="#"><span class="header__item-index">Тинторетто</span></a></li>
-              <li class="header__dropdown-item realism-2"><a class="header__item-name" href="#"><span class="header__item-index">Фридрих </span></a></li>
-              <li class="header__dropdown-item realism-3"><a class="header__item-name" href="#"><span class="header__item-index">Леонардо</span></a></li>
-              <li class="header__dropdown-item realism-4"><a class="header__item-name" href="#"><span class="header__item-index">Верроккьо</span></a></li>
-            </ul>
-          </li>
-          <li class="header__dropdown"><a class="header__dropdown-title" href="#">Импрессионизм</a>
-            <ul class="header__dropdown-list">
-              <li class="header__dropdown-item impress-1"><a class="header__item-name" href="#"><span class="header__item-index">Моне</span></a></li>
-              <li class="header__dropdown-item impress-2"><a class="header__item-name" href="#"><span class="header__item-index">Сислей</span></a></li>
-              <li class="header__dropdown-item impress-3"><a class="header__item-name" href="#"><span class="header__item-index">Мане</span></a></li>
-              <li class="header__dropdown-item impress-4"><a class="header__item-name" href="#"><span class="header__item-index">Ренуар</span></a></li>
-            </ul>
-          </li>
-          <li class="header__dropdown"><a class="header__dropdown-title" href="#">Постимпрессионизм</a>
-            <ul class="header__dropdown-list">
-              <li class="header__dropdown-item postimpress-1"><a class="header__item-name" href="#"><span class="header__item-index">Ван Гог</span></a></li>
-              <li class="header__dropdown-item postimpress-2"><a class="header__item-name" href="#"><span class="header__item-index">Сезанн</span></a></li>
-              <li class="header__dropdown-item postimpress-3"><a class="header__item-name" href="#"><span class="header__item-index">Гоген</span></a></li>
-              <li class="header__dropdown-item postimpress-4"><a class="header__item-name" href="#"><span class="header__item-index">Сёра</span></a></li>
-            </ul>
-          </li>
-          <li class="header__dropdown"><a class="header__dropdown-title" href="#">Авангард</a>
-            <ul class="header__dropdown-list">
-              <li class="header__dropdown-item avangard-1"><a class="header__item-name" href="#"><span class="header__item-index">Кандинский</span></a></li>
-              <li class="header__dropdown-item avangard-2"><a class="header__item-name" href="#"><span class="header__item-index">Маринетти</span></a></li>
-              <li class="header__dropdown-item avangard-3"><a class="header__item-name" href="#"><span class="header__item-index">Малевич</span></a></li>
-              <li class="header__dropdown-item avangard-4"><a class="header__item-name" href="#"><span class="header__item-index">Пикассо</span></a></li>
-            </ul>
-          </li>
-          <li class="header__dropdown"><a class="header__dropdown-title" href="#">Футуризм</a>
-            <ul class="header__dropdown-list">
-              <li class="header__dropdown-item futu-1"><a class="header__item-name" href="#"><span class="header__item-index">Карра</span></a></li>
-              <li class="header__dropdown-item futu-2"><a class="header__item-name" href="#"><span class="header__item-index">Прателла</span></a></li>
-              <li class="header__dropdown-item futu-3"><a class="header__item-name" href="#"><span class="header__item-index">Северини</span></a></li>
-              <li class="header__dropdown-item futu-4"><a class="header__item-name" href="#"><span class="header__item-index">Балла</span></a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__down-search">
-        <form class="header__downform" action="/">
-          <div class="btn__search-container">
-            <button class="header__searchdown">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
-                </svg>
-            </button>
-          </div>
-          <input class="header__downinput" type="search" placeholder="Поиск по сайту">
-        </form>
+    <div class="header__downoversize">
+      <div class="container header__container-down">
+        <nav class="header__navdown">
+          <ul class="header__navlist">
+            <li class="header__dropdown"><a class="header__dropdown-title" href="#">Реализм</a>
+              <ul class="header__dropdown-list" data-simplebar>
+                <li class="header__dropdown-item realism-1"><a class="header__item-name" href="#"><span class="header__item-index">Тинторетто</span></a></li>
+                <li class="header__dropdown-item realism-2"><a class="header__item-name" href="#"><span class="header__item-index">Фридрих </span></a></li>
+                <li class="header__dropdown-item realism-3"><a class="header__item-name" href="#"><span class="header__item-index">Леонардо</span></a></li>
+                <li class="header__dropdown-item realism-4"><a class="header__item-name" href="#"><span class="header__item-index">Верроккьо</span></a></li>
+              </ul>
+            </li>
+            <li class="header__dropdown"><a class="header__dropdown-title" href="#">Импрессионизм</a>
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item impress-1"><a class="header__item-name" href="#"><span class="header__item-index">Моне</span></a></li>
+                <li class="header__dropdown-item impress-2"><a class="header__item-name" href="#"><span class="header__item-index">Сислей</span></a></li>
+                <li class="header__dropdown-item impress-3"><a class="header__item-name" href="#"><span class="header__item-index">Мане</span></a></li>
+                <li class="header__dropdown-item impress-4"><a class="header__item-name" href="#"><span class="header__item-index">Ренуар</span></a></li>
+              </ul>
+            </li>
+            <li class="header__dropdown"><a class="header__dropdown-title" href="#">Постимпрессионизм</a>
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item postimpress-1"><a class="header__item-name" href="#"><span class="header__item-index">Ван Гог</span></a></li>
+                <li class="header__dropdown-item postimpress-2"><a class="header__item-name" href="#"><span class="header__item-index">Сезанн</span></a></li>
+                <li class="header__dropdown-item postimpress-3"><a class="header__item-name" href="#"><span class="header__item-index">Гоген</span></a></li>
+                <li class="header__dropdown-item postimpress-4"><a class="header__item-name" href="#"><span class="header__item-index">Сёра</span></a></li>
+              </ul>
+            </li>
+            <li class="header__dropdown"><a class="header__dropdown-title" href="#">Авангард</a>
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item avangard-1"><a class="header__item-name" href="#"><span class="header__item-index">Кандинский</span></a></li>
+                <li class="header__dropdown-item avangard-2"><a class="header__item-name" href="#"><span class="header__item-index">Маринетти</span></a></li>
+                <li class="header__dropdown-item avangard-3"><a class="header__item-name" href="#"><span class="header__item-index">Малевич</span></a></li>
+                <li class="header__dropdown-item avangard-4"><a class="header__item-name" href="#"><span class="header__item-index">Пикассо</span></a></li>
+              </ul>
+            </li>
+            <li class="header__dropdown"><a class="header__dropdown-title" href="#">Футуризм</a>
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item futu-1"><a class="header__item-name" href="#"><span class="header__item-index">Карра</span></a></li>
+                <li class="header__dropdown-item futu-2"><a class="header__item-name" href="#"><span class="header__item-index">Прателла</span></a></li>
+                <li class="header__dropdown-item futu-3"><a class="header__item-name" href="#"><span class="header__item-index">Северини</span></a></li>
+                <li class="header__dropdown-item futu-4"><a class="header__item-name" href="#"><span class="header__item-index">Балла</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__down-search">
+          <form class="header__downform" action="/">
+            <div class="btn__search-container">
+              <button class="header__searchdown">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                  </svg>
+              </button>
+            </div>
+            <input class="header__downinput" type="search" placeholder="Поиск по сайту">
+          </form>
+        </div>
       </div>
     </div>
   </header>
@@ -609,6 +614,56 @@
             <div class="swiper-button-next events__next"></div>
 
           </div>
+        </div>
+        <div class="events__blocks">
+          <div class="events__block-cards">
+            <div class="events__slide">
+              <img class="events__img" src="img/events-1.png" alt="">
+              <div class="events__info">
+                <p class="events__banner">Музей им. Щусева<br>с 20 марта по 30 апреля</p>
+                <h3 class="events__title-card">Книжная гравюра в живом восприятии</h3>
+                <p class="events__desc">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events__link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="events__slide">
+              <img class="events__img" src="img/events-2.png" alt="">
+              <div class="events__info">
+                <p class="events__banner">ММОМА<br>24 марта 19:00</p>
+                <h3 class="events__title-card">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <p class="events__desc">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                <a class="events__link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="events__slide">
+              <img class="events__img" src="img/events-3.png" alt="">
+              <div class="events__info">
+                <p class="events__banner">Еврейский музей<br>с 31 марта по 21 апреля</p>
+                <h3 class="events__title-card">Выставка «Формация 2020»</h3>
+                <p class="events__desc">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                <a class="events__link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="events__slide">
+              <img class="events__img" src="img/events-4.png" alt="">
+              <div class="events__info">
+                <p class="events__banner">Третьяковка на Крымском валу<br>с 30 марта по 30 апреля</p>
+                <h3 class="events__title-card">XXIV Международная биеннале молодого искусства</h3>
+                <p class="events__desc">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+                <a class="events__link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="events__slide">
+              <img class="events__img" src="img/events-5.png" alt="">
+              <div class="events__info">
+                <p class="events__banner">ММАМ<br>с 8 апреля по 20 мая</p>
+                <h3 class="events__title-card">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <p class="events__desc">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a class="events__link" href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <button class="events__button">Все события</button>
         </div>
       </div>
     </section>
