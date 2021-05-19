@@ -1,7 +1,6 @@
 const swiper = new Swiper('.gallery__slider', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
 
   // If we need pagination
   pagination: {
@@ -38,7 +37,7 @@ const swiper = new Swiper('.gallery__slider', {
     },
 
     1920: {
-      slidesPerGroup: 2,
+      slidesPerGroup: 3,
       slidesPerView: 3,
       slidesPerColumn: 2,
       slidesPerColumnFill: 'row',
