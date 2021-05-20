@@ -555,11 +555,9 @@
         <h2 class="events__title">
           События
         </h2>
-        <div class="events__swiper">
+        <!-- <div class="events__swiper">
           <div class="swiper-container events__swiper-container">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper events__wrapper">
-              <!-- Slides -->
               <div class="swiper-slide events__slide">
                 <img class="events__img" src="img/events-1.png" alt="">
                 <div class="events__info">
@@ -606,18 +604,12 @@
                 </div>
               </div>
             </div>
-            <!-- If we need pagination -->
             <div class="swiper-pagination events__pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev events__prev"></div>
-            <div class="swiper-button-next events__next"></div>
-
           </div>
-        </div>
-        <div class="events__blocks">
-          <div class="events__block-cards">
-            <div class="events__slide">
+        </div> -->
+        <div class="swiper-container events__blocks" data-mobile="false">
+          <div class="swiper-wrapper events__block-cards">
+            <div class="swiper-slide events__slide">
               <img class="events__img" src="img/events-1.png" alt="">
               <div class="events__info">
                 <p class="events__banner">Музей им. Щусева<br>с 20 марта по 30 апреля</p>
@@ -626,7 +618,7 @@
                 <a class="events__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="events__slide">
+            <div class="swiper-slide events__slide">
               <img class="events__img" src="img/events-2.png" alt="">
               <div class="events__info">
                 <p class="events__banner">ММОМА<br>24 марта 19:00</p>
@@ -635,7 +627,7 @@
                 <a class="events__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="events__slide">
+            <div class="swiper-slide events__slide">
               <img class="events__img" src="img/events-3.png" alt="">
               <div class="events__info">
                 <p class="events__banner">Еврейский музей<br>с 31 марта по 21 апреля</p>
@@ -644,7 +636,7 @@
                 <a class="events__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="events__slide">
+            <div class="swiper-slide events__slide">
               <img class="events__img" src="img/events-4.png" alt="">
               <div class="events__info">
                 <p class="events__banner">Третьяковка на Крымском валу<br>с 30 марта по 30 апреля</p>
@@ -653,7 +645,7 @@
                 <a class="events__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="events__slide">
+            <div class="swiper-slide events__slide">
               <img class="events__img" src="img/events-5.png" alt="">
               <div class="events__info">
                 <p class="events__banner">ММАМ<br>с 8 апреля по 20 мая</p>
@@ -663,8 +655,9 @@
               </div>
             </div>
           </div>
-          <button class="events__button">Все события</button>
+          <div class="swiper-pagination"></div>
         </div>
+        <button class="events__button">Все события</button>
       </div>
     </section>
 

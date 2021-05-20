@@ -1,17 +1,32 @@
-const cards = new Swiper('.events__swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+const sliders = document.querySelector('events__blocks');
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+let mySwiper;
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+function mobileSlider() {
+  if (window.innerWidth < 768 && sliders.dataset.mobile == 'false') {
+    mySwiper = new Swiper(sliders, {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      slideClass: 'events__slide',
 
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+    sliders.dataset.mobile = 'true';
+  }
+
+  if (window.innerWidth >= 768) {
+    sliders.dataset.mobile = 'false';
+
+    mySwiper.destroy();
+  }
+}
+
+mobileSlider()
+
+window.addEventListener('resize', () => {
+  mobileSlider();
 });

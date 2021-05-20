@@ -900,7 +900,7 @@ body {
 }
 
 .events__blocks {
-  display: none;
+  /* display: none; */
 }
 
 .events__title {
@@ -942,6 +942,7 @@ body {
 }
 
 .events__wrapper {
+  flex-wrap: nowrap;
   margin-bottom: 15px;
 }
 
@@ -950,6 +951,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   border: 1px solid #CACACA;
+  width: 100%;
   height: 683px;
 }
 
@@ -1011,6 +1013,11 @@ body {
   border-bottom: 1px solid #7943A4;
   color: var(--color-act-btn);
   transition: all .2s ease-in-out;
+}
+
+.events__blocks {
+  overflow: hidden;
+  width: 100%;
 }
 
 
@@ -1499,7 +1506,7 @@ body {
   /* ------------Events------------- */
 
   .events__swiper {
-    display: none;
+    /* display: none; */
   }
 
   .events__blocks {
@@ -1516,15 +1523,13 @@ body {
 
   .events__slide {
     flex-grow: 0;
-    width: 47.456%;
-  }
-
-  .events__slide:nth-child(2n+1) {
     margin-right: 34px;
+    margin-bottom: 35px;
+    width: calc((100% - 34px) / 2);
   }
 
-  .events__slide:not(:last-child) {
-    margin-bottom: 35px;
+  .events__slide:nth-child(2n) {
+    margin-right: 0;
   }
 
   .events__button {
@@ -1537,10 +1542,6 @@ body {
     color: var(--color-violet);
     background-color: var(--color-white);
     cursor: pointer;
-  }
-
-  .events__slide:nth-child(n+3) {
-    display: none;
   }
 
   .events {
@@ -1783,27 +1784,16 @@ body {
   /* --------------Events-------------*/
 
   .events__slide {
-    width: 31.386%;
-  }
-
-  .events__slide:nth-child(2n+1) {
+    width: calc((100% - 27px*2) / 3);
     margin-right: 27px;
   }
 
-  .events__slide {
+  .events__slide:nth-child(2n) {
     margin-right: 27px;
   }
 
   .events__slide:nth-child(3n) {
     margin-right: 0;
-  }
-
-  .events__slide:nth-child(n+4):nth-child(-n+6) {
-    margin-bottom: 0;
-  }
-
-  .events__slide:not(:last-child) {
-    margin-bottom: 50px;
   }
 
   .events__title-card {
@@ -1816,14 +1806,6 @@ body {
 
   .events__info {
     padding: 0 17px 49px 35px;
-  }
-
-  .events__slide:nth-child(n+3) {
-    display: flex;
-  }
-
-  .events__slide:nth-child(n+4) {
-    display: none;
   }
 
 
@@ -2430,16 +2412,9 @@ body {
   /* -------------------Events--------------- */
 
   .events__slide {
-    width: 31.25%;
-  }
-
-  .events__slide {
+    width: calc((100% - 50px*2) / 3);
     margin-right: 50px;
     height: 700px;
-  }
-
-  .events__slide:nth-child(2n+1) {
-    margin-right: 50px;
   }
 
   .events__slide:nth-child(3n) {
