@@ -1,4 +1,4 @@
-const sliders = document.querySelector('events__blocks');
+const sliders = document.querySelector('.events__blocks');
 
 let mySwiper;
 
@@ -21,7 +21,9 @@ function mobileSlider() {
   if (window.innerWidth >= 768) {
     sliders.dataset.mobile = 'false';
 
-    mySwiper.destroy();
+    if (sliders.classList.contains('swiper-container-initialized')) {
+      mySwiper.destroy();
+    }
   }
 }
 
