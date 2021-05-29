@@ -11,6 +11,11 @@ const proslider = new Swiper('.projects__swiper', {
     prevEl: '.swiper-button-prev, .projects__prev',
   },
 
+  a11y: {
+    prevSlideMessage: 'Предыдущая группа спонсоров',
+    nextSlideMessage: 'Следующая группа спонсоров',
+  },
+
   breakpoints: {
 
     768: {

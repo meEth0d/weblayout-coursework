@@ -22,6 +22,11 @@ function desktopSlider() {
         prevEl: '.swiper-button-prev',
       },
 
+      a11y: {
+        prevSlideMessage: 'Предыдущая группа изданий',
+        nextSlideMessage: 'Следующая группа изданий',
+      },
+
       breakpoints: {
 
         1024: {

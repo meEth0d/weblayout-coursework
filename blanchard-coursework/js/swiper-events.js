@@ -13,6 +13,12 @@ function mobileSlider() {
       pagination: {
         el: '.swiper-pagination',
       },
+
+      a11y: {
+        prevSlideMessage: 'Предыдущее событие',
+        nextSlideMessage: 'Следующее событие',
+        paginationBulletMessage: 'Перейти к событию',
+      },
     });
 
     sliders.dataset.mobile = 'true';

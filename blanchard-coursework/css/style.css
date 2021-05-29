@@ -625,7 +625,28 @@ body {
   margin-bottom: 20px;
 }
 .gallery__slide {
+  position: relative;
   text-align: center;
+  cursor: pointer;
+}
+
+.gallery__slide::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-50%) translateX(-50%);
+  transition: background .2s ease-in-out;
+}
+
+.gallery__slide:active::after {
+  width: 90%;
+  height: 90%;
+  background-image: url(../img/gallery-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .gallery__pag {
@@ -646,6 +667,7 @@ body {
   line-height: 32px;
   color: var(--color-white);
 }
+
 
 .gallery__next,
 .gallery__prev {
@@ -1023,7 +1045,12 @@ body {
 
 .events__button {
   display: none;
+  outline: none;
   transition: border, calor, background .2s ease-in-out ;
+}
+
+.events__button:focus {
+  border: 2px solid #C283F3;
 }
 
 .events__button:hover {
@@ -1134,7 +1161,20 @@ body {
   cursor: pointer;
 }
 
-.editions__check-label:focus {
+/* .editions__check-label:focus {
+  outline: var(--focus);
+} */
+
+.editions__focus-check::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.editions__check-input:focus + .editions__name {
   outline: var(--focus);
 }
 
@@ -1172,7 +1212,7 @@ body {
   transition: all .2s ease-in-out;
 }
 
-.active::before {
+.actived::before {
   content: '';
   position: absolute;
   top: 64%;
@@ -1183,7 +1223,7 @@ body {
   transform: translateY(-50%) rotate(45deg);
 }
 
-.active::after {
+.actived::after {
   content: '';
   position: absolute;
   top: 64%;
@@ -1226,6 +1266,10 @@ body {
   border: none;
   width: 73px;
   height: 38px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 32px;
+  color: var(--color-white);
   background-color: var(--color-light-violet);
   outline: none;
 }
@@ -1235,6 +1279,7 @@ body {
 }
 
 .editions__price-input::placeholder {
+  width: 73px;
   font-size: 16px;
   font-weight: normal;
   line-height: 32px;
@@ -1388,13 +1433,16 @@ color: var(--color-white);
   padding: 0;
   border: transparent;
   border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/tip.svg);
   background-color: transparent;
   transition: all .2s ease-in-out;
+  cursor: pointer;
 }
 
-.projects__button:active svg path {
-  stroke: #FFFFFF;
-  fill: #9D5CD0;
+.projects__button:active {
+  background-image: url(../img/tip-active.svg);
 }
 
 .projects__partners {
@@ -1510,7 +1558,7 @@ color: var(--color-white);
 }
 
 .contacts__right {
-  width: 320px;
+  width: 100%;
   height: 320px;
 }
 
@@ -2028,6 +2076,39 @@ color: var(--color-white);
     height: 280px;
   }
 
+  .gallery__slide::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-50%) translateX(-50%);
+    transition: background .2s ease-in-out;
+  }
+
+  .gallery__slide:hover::after {
+    width: 90%;
+    height: 90%;
+    background-image: url(../img/gallery-hover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .gallery__slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background .2s ease-in-out;
+  }
+
+  .gallery__slide:active::before {
+    background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  }
+
   .gallery__next:hover,
   .gallery__prev:hover {
     border: var(--border);
@@ -2433,6 +2514,11 @@ color: var(--color-white);
     transform: rotate(45deg);
   }
 
+  .editions__perv:focus,
+  .editions__next:focus {
+    border: var(--focus);
+  }
+
   .editions__perv:hover,
   .editions__next:hover {
     border: 1px solid #9D5CD0;
@@ -2507,6 +2593,7 @@ color: var(--color-white);
 
 
 
+
   /* -----------Projects------------- */
 
   .projects {
@@ -2547,9 +2634,8 @@ color: var(--color-white);
     transition: none;
   }
 
-  .projects__button:hover svg path {
-    stroke: #FFFFFF;
-    fill: #9D5CD0;
+  .projects__button:hover {
+    background-image: url(../img/tip-active.svg);
   }
 
   .projects__link:hover{
@@ -2929,6 +3015,10 @@ color: var(--color-white);
   }
 
   .catalog__lang-content {
+    display: none;
+  }
+
+  .catalog__lang-content-active {
     display: flex;
   }
 
@@ -3089,6 +3179,11 @@ color: var(--color-white);
     margin: 0 auto;
     padding-left: 160px;
     padding-right: 160px;
+    max-width: 2000px;
+  }
+
+  .contacts-container {
+    margin: 0 auto;
     max-width: 2000px;
   }
 

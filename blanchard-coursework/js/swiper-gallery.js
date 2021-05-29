@@ -14,6 +14,11 @@ const swiper = new Swiper('.gallery__slider', {
     prevEl: '.swiper-button-prev',
   },
 
+  a11y: {
+    prevSlideMessage: 'Предыдущая группа изображений',
+    nextSlideMessage: 'Следующая группа изображений',
+  },
+
   breakpoints: {
 
     320: {
