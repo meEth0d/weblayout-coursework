@@ -2441,6 +2441,27 @@ color: var(--color-white);
     top: 38%;
   }
 
+  .editions__check-label:hover > .editions__name {
+    color: var(--color-light-violet);
+  }
+
+  .editions__check-label:hover > .editions__name::before {
+    border: 1px solid #C283F3;
+  }
+
+  .editions__check-label:active > .editions__name {
+    color: var(--color-act-btn);
+  }
+
+  .editions__check-label:active > .editions__name::before {
+    border: 1px solid var(--color-act-btn);
+  }
+
+  .editions__check-label:active > .editions__name::after {
+    background-color: var(--color-act-btn);
+  }
+
+
   .editions__category {
     margin-bottom: 14px;
   }
