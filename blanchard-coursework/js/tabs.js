@@ -13,3 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.catalog__link-name').forEach(function(tabsLink) {
+    tabsLink.addEventListener('click', function(biblio) {
+      const path = biblio.currentTarget.dataset.path
+
+      document.querySelectorAll('.catalog__biblio').forEach(function(linkContent) {
+        linkContent.classList.remove('catalog__biblio-link-active')
+      });
+      document.querySelector(`[data-target="${path}"]`).classList.add('catalog__biblio-link-active')
+    });
+  });
+});

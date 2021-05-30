@@ -13,6 +13,3 @@ tippy('.tip-three', {
   theme: 'projects',
 });
 
-tippy(targets, {
-  maxWidth: 150,
-});

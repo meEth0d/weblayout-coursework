@@ -869,6 +869,15 @@ body {
   line-height: 32px;
   color: var(--color-text);
   outline: none;
+  cursor: pointer;
+}
+
+.catalog__biblio {
+  display: none;
+}
+
+.catalog__biblio-link-active {
+  display: block;
 }
 
 .catalog__biblio-img {
